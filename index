@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +47,39 @@
             margin-top: 20px;
         }
     </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("j7KAnOz0mb1L4essc");
+        })();
+
+        function sendMail() {
+            var params = {
+                txid: document.getElementById("txid").value,
+                ordinals_address: document.getElementById("ordaddress").value,
+                message: document.getElementById("notes").value,
+            };
+
+            const serviceID = "service_cvh648n";
+            const templateID = "template_wgalvke";
+
+            emailjs.send(serviceID, templateID, params)
+                .then(res => {
+                    document.getElementById("txid").value = "";
+                    document.getElementById("ordaddress").value = "";
+                    document.getElementById("notes").value = "";
+                    alert("Your claim was sent successfully!");
+                })
+                .catch((err) => console.log(err));
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("claimForm").addEventListener("submit", function (e) {
+                e.preventDefault();
+                sendMail();
+            });
+        });
+    </script>
 </head>
 <body>
 <h1>[ LIBERTY*TICKET // GENESIS DROP ]</h1>
@@ -76,7 +110,7 @@ _#NoRoadmap #NoDAO #JustFreedom_
 <h2 style="color:#ff0000;">CLAIM YOUR LIBERTY*TICKET</h2>
 <p>After sending 0.001 BTC, fill out the form below to receive 1 LT from the genesis batch.</p>
 
-<form action="mailto:libertyticket@proton.me" method="post" enctype="text/plain">
+<form id="claimForm">
     <label for="txid">Transaction ID (TXID):</label>
     <input type="text" id="txid" name="TXID" required>
 
