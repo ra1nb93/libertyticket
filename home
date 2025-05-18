@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LIBERTY*TICKET // GENESIS DROP</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: Courier, monospace;
+            padding: 40px;
+        }
+        h1 {
+            color: #00ff00;
+            font-size: 24px;
+        }
+        .terminal {
+            white-space: pre-wrap;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .highlight {
+            color: #ff0000;
+        }
+        a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            background-color: #111;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            font-family: Courier, monospace;
+        }
+        .submit {
+            margin-top: 30px;
+            background-color: #00ff00;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        label {
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>[ LIBERTY*TICKET // GENESIS DROP ]</h1>
+<div class="terminal">
+> INITIATING EXTRACTION PROTOCOL...
+
+LIBERTY*TICKET = <span class="highlight">0.001 BTC</span>
+
+[GENESIS BATCH: 1,000,000 TOKENS AVAILABLE]
+
+SEND EXACTLY 0.001 BTC TO:
+<span class="highlight">3JqarnAVXHmmwmYGGua7Qo2Zz1C3ujk3wh</span>
+
+RECEIVE 1 LT — THE TICKET TO EXIT
+
+NO QUESTIONS. NO PROMISES. NO REFUNDS.
+
+[transaction confirmed manually. LT sent directly]
+
+>>> YOU ARE NOT BUYING A COIN
+>>> YOU ARE BUYING A SIGNAL
+
+>>> YOUR WALLET = YOUR CONSENT TO RESIST
+
+_#NoRoadmap #NoDAO #JustFreedom_
+</div>
+
+<h2 style="color:#ff0000;">CLAIM YOUR LIBERTY*TICKET</h2>
+<p>After sending 0.001 BTC, fill out the form below to receive 1 LT from the genesis batch.</p>
+
+<form action="mailto:libertyticket@proton.me" method="post" enctype="text/plain">
+    <label for="txid">Transaction ID (TXID):</label>
+    <input type="text" id="txid" name="TXID" required>
+
+    <label for="ordaddress">Ordinals-Compatible Address (bc1p...):</label>
+    <input type="text" id="ordaddress" name="Ordinals_Address" required>
+
+    <label for="notes">Optional Message:</label>
+    <textarea id="notes" name="Message" rows="4"></textarea>
+
+    <input type="submit" value="Claim My Liberty*Ticket" class="submit">
+</form>
+
+<p style="margin-top: 30px; font-size: 14px; color: #ccc;">
+NOTE: This is a manual process. Tokens are sent after verifying your transaction and address. No refunds.
+</p>
+
+<hr style="margin-top: 50px; border: none; border-top: 1px solid #00ff00;">
+
+<h2 style="color:#00ff00;">WHY THIS IS LIBERTY</h2>
+<div class="terminal">
+> This ticket won’t set you free.
+
+> It won’t make you rich. It won’t promise a return.
+
+> But it proves one thing: that you refused the script.
+
+> You sent real money for no gain — only for the idea that you still own your mind.
+
+> LIBERTY*TICKET is not a token. It’s a signal. A mark. A pact between strangers who stopped playing.
+
+> 0.001 BTC is the cost of choosing. And that is the only real freedom left.
+</div>
+
+</body>
+</html>
